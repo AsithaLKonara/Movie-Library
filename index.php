@@ -77,13 +77,14 @@
         <div class="movies-top">
             <h2 class="movies-title">Collect your favourites</h2>
             <div class="search-container">
-                <input type="text" placeholder="Search title and add to grid" class="search-input">
+                <input type="text" placeholder="Search title and add to grid" class="search-input" id="searchInput">
+                <div class="search-results" id="searchResults"></div>
             </div>
         </div>
         
         <div class="divider-line"></div>
 
-        <div class="movies-grid">
+        <div class="movies-grid" id="moviesGrid">
             <!-- Card 1 -->
             <div class="movie-card">
                 <div class="movie-image" style="background-image: url('assets/Rectangle%204.png');"></div>
@@ -136,38 +137,38 @@
         </div>
 
         <div class="contact-content">
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm" action="process_form.php" method="POST">
                 <div class="form-row">
                     <div class="form-group half">
-                        <label>First Name *</label>
-                        <input type="text" class="form-control">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" class="form-control" name="firstName" id="firstName" required>
                     </div>
                     <div class="form-group half">
-                        <label>Last Name *</label>
-                        <input type="text" class="form-control">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" class="form-control" name="lastName" id="lastName" required>
                     </div>
                 </div>
                 
                 <div class="form-group">
-                    <label>Email *</label>
-                    <input type="email" class="form-control">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" name="email" id="email" required>
                 </div>
                 
                 <div class="form-group">
-                    <label>Telephone</label>
-                    <input type="tel" class="form-control">
+                    <label for="telephone">Telephone</label>
+                    <input type="tel" class="form-control" name="telephone" id="telephone">
                 </div>
                 
                 <div class="form-group">
-                    <label>Message</label>
-                    <textarea class="form-control textarea"></textarea>
+                    <label for="message">Message *</label>
+                    <textarea class="form-control textarea" name="message" id="message" required></textarea>
                 </div>
                 
                 <p class="required-text">*required fields</p>
                 
                 <div class="form-footer">
-                    <label class="checkbox-label">
-                        <input type="checkbox" class="custom-checkbox">
+                    <label class="checkbox-label" for="terms">
+                        <input type="checkbox" class="custom-checkbox" name="terms" id="terms" required>
                         <span class="terms-text">I agree to the <span class="underline">Terms & Conditions</span></span>
                     </label>
                 </div>
@@ -177,7 +178,9 @@
                 </div>
             </form>
             
-            <div class="contact-image"></div>
+            <div class="contact-image">
+                <iframe src="https://maps.google.com/maps?q=eBEYONDS&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
 
