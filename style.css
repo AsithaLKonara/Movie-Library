@@ -1,0 +1,220 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff; /* Page background placeholder */
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Main Menu */
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Flexbox spacing instead of gap: 461px */
+    padding: 16px 115px;
+    width: 100%;
+    max-width: 1560px; /* Kept from figma CSS */
+    height: 78px;
+    margin: 0 auto; /* Center navbar if screen > 1560px */
+    background: #0F0F0F;
+    position: relative; /* Relative for layout flow */
+    z-index: 1000;
+}
+
+/* Frame 3 */
+.frame-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    isolation: isolate;
+    width: 191px;
+    height: 46px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 191px;
+    height: 46px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+    text-decoration: none;
+}
+
+.layer_1 {
+    position: relative;
+    width: 191px;
+    height: 46px;
+    left: 0px;
+    top: 0px;
+}
+
+/* Vector common */
+.vector {
+    position: absolute;
+}
+
+/* White Vectors */
+.v-w-1 { left: 29.33%; right: 63.52%; top: 27.17%; bottom: 29.93%; background: #FFFFFF; }
+.v-w-2 { left: 36.86%; right: 55.38%; top: 38.49%; bottom: 28.96%; background: #FFFFFF; }
+.v-w-3 { left: 45%; right: 47.47%; top: 38.36%; bottom: 19.19%; background: #FFFFFF; }
+.v-w-4 { left: 53.2%; right: 39.05%; top: 38.49%; bottom: 28.96%; background: #FFFFFF; }
+.v-w-5 { left: 61.69%; right: 35.97%; top: 27.17%; bottom: 29.93%; background: #FFFFFF; }
+.v-w-6 { left: 65.05%; right: 27.28%; top: 38.42%; bottom: 19.77%; background: #FFFFFF; }
+.v-w-7 { left: 72.94%; right: 20.16%; top: 38.48%; bottom: 28.94%; background: #FFFFFF; }
+.v-w-8 { left: 80.41%; right: 12.46%; top: 39.35%; bottom: 29.01%; background: #FFFFFF; }
+.v-w-9 { left: 88.55%; right: 0%; top: 38.44%; bottom: 29.93%; background: #FFFFFF; }
+
+/* Orange Vectors (#CC9601) */
+.v-o-1 { left: 0%; right: 76.12%; top: 0%; bottom: 37.25%; background: #CC9601; }
+.v-o-2 { left: 15.48%; right: 78.05%; top: 55.53%; bottom: 15.35%; background: #CC9601; }
+.v-o-3 { left: 13.26%; right: 82.67%; top: 65.1%; bottom: 2.65%; background: #CC9601; }
+.v-o-4 { left: 8.93%; right: 86.83%; top: 70.48%; bottom: 0%; background: #CC9601; }
+.v-o-5 { left: 3.67%; right: 89.43%; top: 64.92%; bottom: 8.05%; background: #CC9601; }
+.v-o-6 { left: 0.64%; right: 91.61%; top: 55.53%; bottom: 27.3%; background: #CC9601; }
+
+/* Desktop Menu */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.menu-item {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.011em;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover, .menu-item.active {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+}
+
+/* Burger Menu Icon */
+.burger-menu {
+    position: relative;
+    width: 34.29px;
+    height: 20.57px;
+    display: none; /* Hidden on desktop */
+    cursor: pointer;
+    flex: none;
+    order: 2;
+    z-index: 1001;
+}
+
+/* Modifying vector left: 95.33% from original CSS to left: 0% so it forms a proper line instead of a dot */
+.burger-menu .vector {
+    left: 0%; /* Changed from 95.33% to form horizontal lines */
+    right: 0%;
+    border: 2.28571px solid #FFFFFF;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.burger-menu .b-1 { top: 7.14%; bottom: 92.86%; }
+.burger-menu .b-2 { top: 50%; bottom: 50%; }
+.burger-menu .b-3 { top: 92.86%; bottom: 7.14%; }
+
+/* Mobile Menu overlay (hidden by default) */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0F0F0F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    z-index: 999;
+}
+
+.mobile-nav.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.mobile-nav .menu-item {
+    font-size: 24px;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1150px) {
+    .main-menu {
+        padding: 16px 60px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menu {
+        display: none; /* Hide desktop menu links */
+    }
+    .burger-menu {
+        display: block; /* Show burger menu icon */
+    }
+    .main-menu {
+        padding: 16px 30px;
+    }
+}
+
+/* Burger menu animations for active state (X shape) */
+.burger-menu.active .b-1 {
+    top: 50%;
+    bottom: auto;
+    transform: rotate(45deg);
+}
+.burger-menu.active .b-2 {
+    opacity: 0;
+}
+.burger-menu.active .b-3 {
+    top: 50%;
+    bottom: auto;
+    transform: rotate(-45deg);
+}
+
+/* Hero Banner */
+.hero-banner {
+    position: absolute;
+    width: 1561px; /* From Figma */
+    max-width: 100%; /* Ensure responsiveness */
+    height: 622px;
+    left: -1px;
+    top: 78px;
+    background: url('assets/banner.png') lightgray 50% / cover no-repeat; /* Updated image path */
+}
