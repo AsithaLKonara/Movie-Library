@@ -90,14 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
             card.className = 'movie-card';
             card.innerHTML = `
                 <div class="movie-image" style="background-image: url('${imgSrc}');"></div>
+                <div class="add-icon remove-btn">
+                    <div class="add-bg"></div>
+                    <div class="plus-line-1"></div>
+                    <div class="plus-line-2"></div>
+                </div>
                 <div class="movie-info">
                     <h3 class="movie-card-title">${show.name}</h3>
                     <p class="movie-desc">${desc}</p>
-                    <div class="add-icon remove-btn">
-                        <div class="add-bg"></div>
-                        <div class="plus-line-1"></div>
-                        <div class="plus-line-2"></div>
-                    </div>
                 </div>
             `;
             

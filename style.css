@@ -55,37 +55,12 @@ body {
     text-decoration: none;
 }
 
-.layer_1 {
-    position: relative;
-    width: 191px;
-    height: 46px;
-    left: 0px;
-    top: 0px;
+.logo-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: left center;
 }
-
-/* Vector common */
-.vector {
-    position: absolute;
-}
-
-/* White Vectors */
-.v-w-1 { left: 29.33%; right: 63.52%; top: 27.17%; bottom: 29.93%; background: #FFFFFF; }
-.v-w-2 { left: 36.86%; right: 55.38%; top: 38.49%; bottom: 28.96%; background: #FFFFFF; }
-.v-w-3 { left: 45%; right: 47.47%; top: 38.36%; bottom: 19.19%; background: #FFFFFF; }
-.v-w-4 { left: 53.2%; right: 39.05%; top: 38.49%; bottom: 28.96%; background: #FFFFFF; }
-.v-w-5 { left: 61.69%; right: 35.97%; top: 27.17%; bottom: 29.93%; background: #FFFFFF; }
-.v-w-6 { left: 65.05%; right: 27.28%; top: 38.42%; bottom: 19.77%; background: #FFFFFF; }
-.v-w-7 { left: 72.94%; right: 20.16%; top: 38.48%; bottom: 28.94%; background: #FFFFFF; }
-.v-w-8 { left: 80.41%; right: 12.46%; top: 39.35%; bottom: 29.01%; background: #FFFFFF; }
-.v-w-9 { left: 88.55%; right: 0%; top: 38.44%; bottom: 29.93%; background: #FFFFFF; }
-
-/* Orange Vectors (#CC9601) */
-.v-o-1 { left: 0%; right: 76.12%; top: 0%; bottom: 37.25%; background: #CC9601; }
-.v-o-2 { left: 15.48%; right: 78.05%; top: 55.53%; bottom: 15.35%; background: #CC9601; }
-.v-o-3 { left: 13.26%; right: 82.67%; top: 65.1%; bottom: 2.65%; background: #CC9601; }
-.v-o-4 { left: 8.93%; right: 86.83%; top: 70.48%; bottom: 0%; background: #CC9601; }
-.v-o-5 { left: 3.67%; right: 89.43%; top: 64.92%; bottom: 8.05%; background: #CC9601; }
-.v-o-6 { left: 0.64%; right: 91.61%; top: 55.53%; bottom: 27.3%; background: #CC9601; }
 
 /* Desktop Menu */
 .menu {
@@ -112,6 +87,7 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .menu-item:hover, .menu-item.active {
@@ -133,6 +109,7 @@ body {
 
 /* Modifying vector left: 95.33% from original CSS to left: 0% so it forms a proper line instead of a dot */
 .burger-menu .vector {
+    position: absolute;
     left: 0%; /* Changed from 95.33% to form horizontal lines */
     right: 0%;
     border: 2.28571px solid #FFFFFF;
@@ -179,15 +156,15 @@ body {
     .main-menu {
         padding: 16px 60px;
     }
-}
-
-@media screen and (max-width: 900px) {
     .menu {
         display: none; /* Hide desktop menu links */
     }
     .burger-menu {
         display: block; /* Show burger menu icon */
     }
+}
+
+@media screen and (max-width: 900px) {
     .main-menu {
         padding: 16px 30px;
     }
@@ -437,6 +414,7 @@ body {
     top: 12px;
     cursor: pointer;
     transition: transform 0.2s;
+    z-index: 10;
 }
 
 .add-icon:hover {
@@ -707,10 +685,16 @@ body {
 }
 
 .social-icon {
-    width: 20px;
-    height: 20px;
-    background: #FFFFFF;
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
 }
 
 .footer-divider {

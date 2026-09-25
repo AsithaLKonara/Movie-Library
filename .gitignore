@@ -40,3 +40,8 @@ logs
 
 # Misc
 config.bat
+
+# Python image cropping scripts
+crop_logo.py
+crop_real_logo.py
+extract_logo.py
