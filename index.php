@@ -181,6 +181,31 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-address">
+                IT Group<br>C. Salvador de Madariaga, 1<br>28027 Madrid<br>Spain
+            </div>
+            <div class="footer-social">
+                <span>Follow us on</span>
+                <div class="social-icon"></div>
+                <div class="social-icon"></div>
+            </div>
+        </div>
+        
+        <div class="footer-divider"></div>
+        
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                Copyright © 2022 IT Hotels. All rights reserved.
+            </div>
+            <div class="footer-credits">
+                Photos by Felix Mooneeram <span class="credit-link">& Serge Kutuzov</span> <span class="credit-link">on Unsplash</span>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
