@@ -72,6 +72,115 @@
         <p class="intro-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
     </section>
 
+    <!-- Movies Section -->
+    <section class="movies-section">
+        <div class="movies-top">
+            <h2 class="movies-title">Collect your favourites</h2>
+            <div class="search-container">
+                <input type="text" placeholder="Search title and add to grid" class="search-input">
+            </div>
+        </div>
+        
+        <div class="divider-line"></div>
+
+        <div class="movies-grid">
+            <!-- Card 1 -->
+            <div class="movie-card">
+                <div class="movie-image" style="background-image: url('assets/Rectangle%204.png');"></div>
+                <div class="movie-info">
+                    <h3 class="movie-card-title">Batman Returns</h3>
+                    <p class="movie-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut…</p>
+                    <div class="add-icon">
+                        <div class="add-bg"></div>
+                        <div class="plus-line-1"></div>
+                        <div class="plus-line-2"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="movie-card">
+                <div class="movie-image" style="background-image: url('assets/Rectangle%205.png');"></div>
+                <div class="movie-info">
+                    <h3 class="movie-card-title">Wild Wild West</h3>
+                    <p class="movie-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut…</p>
+                    <div class="add-icon">
+                        <div class="add-bg"></div>
+                        <div class="plus-line-1"></div>
+                        <div class="plus-line-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="movie-card">
+                <div class="movie-image" style="background-image: url('assets/Rectangle%206.png');"></div>
+                <div class="movie-info">
+                    <h3 class="movie-card-title">The Amazing Spiderman</h3>
+                    <p class="movie-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut…</p>
+                    <div class="add-icon">
+                        <div class="add-bg"></div>
+                        <div class="plus-line-1"></div>
+                        <div class="plus-line-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-header">
+            <h2 class="contact-title">How to reach us</h2>
+            <p class="contact-desc">Lorem ipsum dolor sit amet, consetetur.</p>
+        </div>
+
+        <div class="contact-content">
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label>First Name *</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group half">
+                        <label>Last Name *</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label>Telephone</label>
+                    <input type="tel" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea class="form-control textarea"></textarea>
+                </div>
+                
+                <p class="required-text">*required fields</p>
+                
+                <div class="form-footer">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="custom-checkbox">
+                        <span class="terms-text">I agree to the <span class="underline">Terms & Conditions</span></span>
+                    </label>
+                </div>
+                
+                <div class="submit-container">
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </div>
+            </form>
+            
+            <div class="contact-image"></div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
