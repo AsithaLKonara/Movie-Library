@@ -218,3 +218,48 @@ body {
     top: 78px;
     background: url('assets/banner.png') lightgray 50% / cover no-repeat; /* Updated image path */
 }
+
+/* Intro Section */
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 66px 104px 66px 115px;
+    position: absolute;
+    width: 1560px;
+    max-width: 1560px;
+    height: 307px;
+    left: -1px;
+    top: 700px;
+    background: #0F0F0F;
+}
+
+.intro-title {
+    width: 390px;
+    height: 82px;
+    font-family: 'DIN Alternate', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54.8571px;
+    line-height: 150%;
+    letter-spacing: -0.011em;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.intro-text {
+    width: 527px;
+    height: 93px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.5714px;
+    line-height: 150%;
+    letter-spacing: -0.011em;
+    color: #B7B7B7;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}

@@ -7,7 +7,7 @@
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -64,6 +64,12 @@
     <!-- Hero Banner -->
     <section class="hero-banner">
         <!-- Banner content will go here -->
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <h2 class="intro-title">MOVIE LIBRARY</h2>
+        <p class="intro-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
     </section>
 
     <script src="script.js"></script>
