@@ -16,7 +16,6 @@ A responsive web application for managing and viewing a collection of movies.
 - **CSS3 (Vanilla)**: Custom styling including Flexbox, CSS Grid, and responsive media queries.
 - **JavaScript (Vanilla)**: DOM manipulation for the mobile menu, search functionality, and movie grid interactions.
 - **PHP**: Server-side processing for the contact form (`process_form.php`).
-- **Python**: Utility scripts for image/logo processing (`crop_logo.py`, `extract_logo.py`, etc.).
 
 ## Project Structure
 
